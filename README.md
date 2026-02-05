@@ -43,61 +43,13 @@ Contrairement aux tests techniques classiques :
 - **Top 100** sauvegardé localement
 - Analyse forces/faiblesses
 
-## 🛠️ Stack Technique
-
-### Architecture
-
-```
-/
-├── index.html    (Structure HTML sémantique)
-├── style.css     (Animations & styles custom)
-└── app.js        (Moteur complet : données + logique + UI)
-```
-
-### Technologies
+## 🛠️ Technologies
 
 - **HTML5** sémantique
 - **Tailwind CSS** (CDN) pour le design
 - **Vanilla JavaScript** pur (pas de framework)
 - **LocalStorage** pour persistence
 - **Google Fonts** (Syne + DM Mono)
-
-### Points Techniques Forts
-
-#### 1. Génération Dynamique de Questions
-
-```javascript
-// Template de question avec variations infinies
-generateQuestion: () => {
-  const scenarios = [...];
-  const scenario = scenarios[random()];
-
-  return {
-    question: `Dans ${scenario}...`,
-    choices: [...],
-    correct: [...],
-    explanation: "..."
-  };
-}
-```
-
-#### 2. Moteur Adaptatif
-
-```javascript
-// Le niveau évolue selon les performances
-if (consecutiveCorrect >= 3) {
-  adaptiveLevel = nextLevel(); // Monte la difficulté
-}
-if (consecutiveWrong >= 2) {
-  adaptiveLevel = previousLevel(); // Réduit la difficulté
-}
-```
-
-#### 3. Système de Modules
-
-- Conditionnels (débloqués selon score)
-- Hiérarchisés (fondamentaux → avancé)
-- Contextuels (track-specific)
 
 ## 🧠 Architecture Logique
 
