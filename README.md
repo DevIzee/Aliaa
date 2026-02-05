@@ -1,7 +1,5 @@
 # ALIAA - Adaptive Learning & Interview Assessment App
 
-## 🎯 Concept
-
 ALIAA est une plateforme d'évaluation adaptative pour développeurs qui **n'évalue pas un langage, mais ta façon de penser, décider et raisonner**.
 
 Contrairement aux tests techniques classiques :
@@ -101,48 +99,6 @@ if (consecutiveWrong >= 2) {
 - Hiérarchisés (fondamentaux → avancé)
 - Contextuels (track-specific)
 
-## 📦 Déploiement
-
-### Netlify (recommandé)
-
-1. **Créer un repo GitHub** avec ces 3 fichiers
-2. **Connecter à Netlify**
-3. **Configuration** :
-   - Build command: _(laisser vide)_
-   - Publish directory: `/`
-   - Deploy!
-
-### Alternative : GitHub Pages
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin YOUR_REPO
-git push -u origin main
-```
-
-Activer GitHub Pages dans Settings → Pages → Source: main
-
-## 🎨 Design
-
-### Identité Visuelle
-
-- **Palette** : Neutral (950-100) + Blue/Cyan accents
-- **Typographie** :
-  - Display: Syne (headers, bold)
-  - Mono: DM Mono (body, code feel)
-- **Style** : Dark, minimaliste, pro, tech
-
-### Animations
-
-- Fade-in pour apparitions
-- Slide-up pour transitions
-- Progress bars animées
-- Hover effects subtils
-- Glassmorphism effects
-
 ## 🧠 Architecture Logique
 
 ### Flow UX
@@ -161,40 +117,6 @@ Module 2...
 Résultat (Score + Profil + Top 100)
 ```
 
-### Structure des Données
-
-#### Concepts
-
-```javascript
-{
-  id: "reasoning_basics",
-  title: "Penser en développeur",
-  texts: ["...", "...", "..."]
-}
-```
-
-#### Question Templates
-
-```javascript
-{
-  track: ["front", "back", "full"],
-  level: "junior",
-  category: "reasoning",
-  generateQuestion: () => ({ ... })
-}
-```
-
-#### Modules
-
-```javascript
-{
-  id: "foundations",
-  name: "Fondamentaux",
-  concepts: ["reasoning_basics"],
-  templates: ["bug_strategy", "best_practice_trap"]
-}
-```
-
 ## 📊 Métriques & Analytics
 
 ### Tracking
@@ -209,28 +131,6 @@ Résultat (Score + Profil + Top 100)
 - Niveau adaptatif en temps réel
 - Sélection intelligente des questions
 - Pondération selon historique
-
-## 🎓 Utilisation en Entretien
-
-### Arguments PRO
-
-**Architecture** :
-
-- "C'est un moteur d'évaluation data-driven"
-- "Le parcours n'est jamais déterministe"
-- "Séparation claire : données / logique / UI"
-
-**Technique** :
-
-- "Questions générées via templates paramétrés"
-- "Système adaptatif avec machine learning basique"
-- "Scalable : ajouter 1000 questions = ajouter des templates"
-
-**Design** :
-
-- "UI distinctive, pas de 'AI slop'"
-- "Animations CSS pures"
-- "Responsive & accessible"
 
 ### Extensions Possibles
 
